@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Ekeleme - Portfolio</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      ::-webkit-scrollbar{
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb{
+        border-radius: 24px;
+        background-color: #00ab44
+      }
+      ::-webkit-scrollbar-track{
+        background-color: black;
+      }
+
+      html{
+        scroll-behavior: smooth;
+      }
+
+      
+      body {
+        width: 100%;
+        font-family: 'Poppins';
+
+        color: white;
+        margin: 0;
+      }
+
+      nav{
+        width: 100%;
+        padding: 0.8em;
+        
+        position: fixed;
+        
+        z-index: 1;
+
+        background-color: white;
+
+        border-bottom: 1px solid black;
+      }
+
+
+
+      section.first {
+        background-image: url(./images/pexels-rodolfo-clix-922610.jpg);
+        background-size: 100%;
+        background-position: 50% 70%;
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 100vh;
+
+        padding-top: 2em;
+      }
+
+      figure {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, -55%);
+        width: 40%;
+      }
+      figure img {
+        width: 620px;
+      }
+
+      figcaption {
+        background-color: white;
+        color: black;
+
+        width: 50%;
+
+        max-width: 400px;
+        line-height: 32px;
+        padding: 0.4em;
+        margin: auto;
+
+        border-radius: 8px;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .first-container {
+        padding: 1em 3em;
+      }
+
+      .portfolio{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: auto;
+
+        font-family: 'Passero One';
+      }
+
+      .portfolio a {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+
+        color: black;
+        text-decoration: none;
+      }
+      .portfolio a:hover{
+        color: #00ab44;
+      }
+      .write-up {
+        padding: 2em 4em;
+      }
+      .write-up p {
+        max-width: 460px;
+      }
+
+      .creative p {
+        font-size: 5rem;
+        font-weight: 500;
+        padding-left: 0.1em;
+        height: 11vh;
+        margin: 0;
+        font-family: "Herr Von Muellerhoff";
+
+        color: #00ab44;
+        text-shadow: 0px 0px 10px #00ab44, 0px 0px 10px #00ab44;
+      }
+      .product p {
+        font-size: 5rem;
+        margin: 0;
+        font-family: "lato";
+      }
+      .design p {
+        font-size: 5rem;
+        margin: 0;
+        font-family: "lato";
+      }
+
+      .second {
+        color: black;
+        border: 1px solid transparent;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        background-color: white;
+
+        transform: translate(0%, -1%);
+
+        padding-top: 2em;
+      }
+      .second-container {
+        padding: 2em 3em;
+      }
+
+      #name {
+        margin: 0;
+        font-size: 48px;
+        font-weight: bold;
+
+        height: 64px;
+      }
+      #career {
+        color: #00ab44;
+        margin: 0;
+        font-size: 24px;
+      }
+      #location {
+        margin: 0;
+      }
+
+      #number {
+        margin: 1em 0 0 0;
+      }
+      #mail {
+        margin: 0;
+        font-weight: bold;
+      }
+
+      p.subhead {
+        margin: 0;
+        font-size: 24px;
+        color: #00ab44;
+      }
+
+      div.flex-list {
+        display: flex;
+        margin: 2em 0;
+      }
+
+      div.flex-list div {
+        width: 30%;
+      }
+
+      p.company {
+        margin: 0;
+      }
+
+      .socials {
+        margin: 1em 0;
+        padding: 1em;
+      }
+
+      #linkedinActive{
+        transition: 1s width ease;
+        display: flex;
+        width: 64px;
+        height: 64px;
+        border-radius: 40px;
+        background-color: black;
+        color: white;
+
+        text-decoration: none;
+
+      }
+      #linkedinActive p{
+        width: 0px;
+        margin: 1.1em 1em;
+
+      }
+      #linkedinActive:hover{
+        width: 200px;
+      }
+      #linkedinActive:hover p{
+        width: 200px;
+      }
+      #linkedinInActive{
+        display: flex;
+        width: 64px;
+      }
+
+      
+    </style>
+
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="preloader"></div>
+    <nav>
+      <div class="portfolio">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Work</a>
+      </div>
+    </nav>
+
+
+    <main>
+
+
+      <section class="first" id="portfolio">
+        <div class="first-container">
+          
+
+          <figure>
+            <img src="./images/DanielGlow.png" alt="" />
+            <figcaption>Daniel Ekeleme</figcaption>
+          </figure>
+
+          <div class="write-up">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, optio provident, commodi saepe quis deserunt omnis eum
+              eveniet aspernatur dolores vel illum! Sapiente est eum aut minima
+              nemo provident recusandae accusantium, nesciunt fuga, neque iure
+              tempora. Debitis dolorem fugit quos?
+            </p>
+          </div>
+
+          <div class="creative">
+            <p>Creative</p>
+          </div>
+          <div class="product">
+            <p>Product</p>
+          </div>
+          <div class="design">
+            <p>Designer (<span>UI/UX</span>)</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second" id="resume">
+        <div class="second-container">
+          <div class="details">
+            <p id="name">Daniel Ekeleme</p>
+            <p id="career">Product Designer</p>
+            <p id="location">Benin city, Nigeria.</p>
+
+            <p id="number">+234-902-038-3204</p>
+            <p id="mail">ekelemedaniel12@gmail.com</p>
+
+            <div class="socials">
+              <div id="linkedin">
+                <a id="linkedinInActive" onmouseover="linkedinActive()" href="https://www.linkedin.com/in/daniel-ekeleme/" target="_blank">
+                  <img height="64px" width="64px" src="./images/Icons/icons8-linkedin-circled-100.png">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-list">
+            <div>
+              <p class="subhead space">TECHNICAL PROFILE</p>
+              <ul>
+                <li>Figma</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Microsoft Office</li>
+                <li>ASP.NET</li>
+                <li>Adobe Photoshop</li>
+                <li>Microsoft Windows</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+            <div>
+              <p class="subhead">SKILLS</p>
+              <ul class="listed">
+                <li>Attention to Detail</li>
+                <li>Cultural Awareness</li>
+                <li>Multitasking Abilities</li>
+                <li>Teamwork and Collaboration</li>
+                <li>Excellent Communication</li>
+                <li>Dependable and Responsible</li>
+                <li>Organization and Time Management</li>
+                <li>Decision Making</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="subhead">EXPERIENCE</p>
+          <p class="company">
+            <strong>XYZ Company, Benin City</strong>
+            <span><em>- UI/UX Designer</em></span>
+          </p>
+          <span
+            ><small><i>July 2019 - December 2022</i></small></span
+          >
+
+          <ul>
+            <li>
+              Communicated with product managers and UX designers to translate
+              project requirements and business objectives into polished user
+              interfaces.
+            </li>
+            <li>
+              Drove UI requirements through to implementation, complete with
+              accurate sizing estimates and task breakdowns.
+            </li>
+            <li>
+              Collaborated with teammates to deliver valuable features meeting
+              business and customer needs.
+            </li>
+            <li>
+              Integrated UI features complying with prescribed code standards
+              and technical design guidelines.
+            </li>
+            <li>
+              Built highly functional web applications using JavaScript, HTML
+              and CSS.
+            </li>
+            <li>
+              Converted abstract ideas and requirements into user personas and
+              storyboards.
+            </li>
+            <li>
+              Conducted live user testing of components and functionality to
+              evaluate effectiveness of designs and enhancements.
+            </li>
+            <li>
+              Operated in a global development environment, working across
+              multiple time zones and cultures.
+            </li>
+            <li>
+              Worked with design teams, project managers and business analysts
+              to create intuitive and easy-to-use software.
+            </li>
+            <li>
+              Used wireframes, mock-ups and prototypes to establish user
+              interface design and architecture.
+            </li>
+            <li>
+              Recommended design changes and iterative updates to IT manager.
+            </li>
+            <li>
+              Devised site maps and mockups for designs based on proven
+              methodologies and end-user feedback.
+            </li>
+          </ul>
+
+          <p class="company">
+            <strong>ABC Company, Benin City</strong> <i>- Product Designer</i>
+          </p>
+          <span
+            ><small><i>January 2019 - January 2019</i></small></span
+          >
+
+          <ul>
+            <li>
+              Brainstormed with peers and other members of design team to
+              determine enhancements and product features.
+            </li>
+            <li>
+              Suggested enhancements to product design that would improve user
+              experience.
+            </li>
+            <li>
+              Identified changes in project scope and modified job schedule
+              accordingly.
+            </li>
+            <li>Produced rapid prototypes using Figma.</li>
+            <li>
+              Managed multiple projects effectively in a demanding environment
+              with tight deadlines.
+            </li>
+            <li>
+              Contacted proper stakeholders to share changes to project scope
+              and timelines.
+            </li>
+            <li>Monitored workspace to keep safe and free of debris.</li>
+            <li>
+              Traveled to manufacturing facilities to evaluate product creation
+              and point out potential issues.
+            </li>
+            <li>Followed quality control procedures.</li>
+            <li>
+              Converted project specifications into drawings and other materials
+              that would be used to create product.
+            </li>
+            <li>
+              Negotiated with vendors and manufacturers on pricing, services and
+              scheduled shipping windows.
+            </li>
+            <li>
+              Documented each step in product's design process for use in
+              manuals.
+            </li>
+            <li>
+              Offered friendly and efficient service to customers, handled
+              challenging situations with ease.
+            </li>
+            <li>Developed team communications and information for meetings.</li>
+            <li>
+              Drove operational improvements which resulted in savings and
+              improved profit margins.
+            </li>
+            <li>
+              Completed paperwork, recognizing discrepancies and promptly
+              addressing for resolution.
+            </li>
+            <li>
+              Participated in team-building activities to enhance working
+              relationships.
+            </li>
+            <li>
+              Used Microsoft Word and other software tools to create documents
+              and other communications.
+            </li>
+            <li>
+              Actively listened to customers' requests, confirming full
+              understanding before addressing concerns.
+            </li>
+          </ul>
+
+          <p class="subhead">EDUCATION</p>
+          <ul>
+            <li>
+              <strong>Ambrose Ali University, Edo State</strong>
+              <i>- Bachelor of Science, Computer Science</i><br />
+              <small><i>October 2016 - July 2019</i></small>
+            </li>
+          </ul>
+
+          <p class="subhead">CERTIFICATIONS</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Full-Stack Developer, Zuri x I4G</strong>
+                <i>- January 2019</i>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
