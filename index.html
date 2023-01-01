@@ -6,261 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Ekeleme - Portfolio</title>
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
-      @import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <link rel="stylesheet" href="./styles/resume.css" />
+    <link rel="stylesheet" href="./styles/work.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
-      ::-webkit-scrollbar{
-        width: 10px;
-      }
-      ::-webkit-scrollbar-thumb{
-        border-radius: 24px;
-        background-color: #00ab44
-      }
-      ::-webkit-scrollbar-track{
-        background-color: black;
-      }
-
-      html{
-        scroll-behavior: smooth;
-      }
-
-      
-      body {
-        width: 100%;
-        font-family: 'Poppins';
-
-        color: white;
-        margin: 0;
-      }
-
-      nav{
-        width: 100%;
-        padding: 0.8em;
-        
-        position: fixed;
-        
-        z-index: 1;
-
-        background-color: white;
-
-        border-bottom: 1px solid black;
-      }
-
-
-
-      section.first {
-        background-image: url(./images/pexels-rodolfo-clix-922610.jpg);
-        background-size: 100%;
-        background-position: 50% 70%;
-        background-repeat: no-repeat;
-
-        width: 100%;
-        height: 100vh;
-
-        padding-top: 2em;
-      }
-
-      figure {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(0%, -55%);
-        width: 40%;
-      }
-      figure img {
-        width: 620px;
-      }
-
-      figcaption {
-        background-color: white;
-        color: black;
-
-        width: 50%;
-
-        max-width: 400px;
-        line-height: 32px;
-        padding: 0.4em;
-        margin: auto;
-
-        border-radius: 8px;
-        text-align: center;
-        font-size: 2rem;
-      }
-
-      .first-container {
-        padding: 1em 3em;
-      }
-
-      .portfolio{
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-        margin: auto;
-
-        font-family: 'Passero One';
-      }
-
-      .portfolio a {
-        margin: 0;
-        text-align: center;
-        font-size: 1.5rem;
-
-        color: black;
-        text-decoration: none;
-      }
-      .portfolio a:hover{
-        color: #00ab44;
-      }
-      .write-up {
-        padding: 2em 4em;
-      }
-      .write-up p {
-        max-width: 460px;
-      }
-
-      .creative p {
-        font-size: 5rem;
-        font-weight: 500;
-        padding-left: 0.1em;
-        height: 11vh;
-        margin: 0;
-        font-family: "Herr Von Muellerhoff";
-
-        color: #00ab44;
-        text-shadow: 0px 0px 10px #00ab44, 0px 0px 10px #00ab44;
-      }
-      .product p {
-        font-size: 5rem;
-        margin: 0;
-        font-family: "lato";
-      }
-      .design p {
-        font-size: 5rem;
-        margin: 0;
-        font-family: "lato";
-      }
-
-      .second {
-        color: black;
-        border: 1px solid transparent;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-
-        background-color: white;
-
-        transform: translate(0%, -1%);
-
-        padding-top: 2em;
-      }
-      .second-container {
-        padding: 2em 3em;
-      }
-
-      #name {
-        margin: 0;
-        font-size: 48px;
-        font-weight: bold;
-
-        height: 64px;
-      }
-      #career {
-        color: #00ab44;
-        margin: 0;
-        font-size: 24px;
-      }
-      #location {
-        margin: 0;
-      }
-
-      #number {
-        margin: 1em 0 0 0;
-      }
-      #mail {
-        margin: 0;
-        font-weight: bold;
-      }
-
-      p.subhead {
-        margin: 0;
-        font-size: 24px;
-        color: #00ab44;
-      }
-
-      div.flex-list {
-        display: flex;
-        margin: 2em 0;
-      }
-
-      div.flex-list div {
-        width: 30%;
-      }
-
-      p.company {
-        margin: 0;
-      }
-
-      .socials {
-        margin: 1em 0;
-        padding: 1em;
-      }
-
-      #linkedinActive{
-        transition: 1s width ease;
-        display: flex;
-        width: 64px;
-        height: 64px;
-        border-radius: 40px;
-        background-color: black;
-        color: white;
-
-        text-decoration: none;
-
-      }
-      #linkedinActive p{
-        width: 0px;
-        margin: 1.1em 1em;
-
-      }
-      #linkedinActive:hover{
-        width: 200px;
-      }
-      #linkedinActive:hover p{
-        width: 200px;
-      }
-      #linkedinInActive{
-        display: flex;
-        width: 64px;
-      }
-
-      
-    </style>
-
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="preloader"></div>
     <nav>
+      <div class="mobile-menu">
+        <div class="btns">
+          <button type="button" onclick="revealMenu()"><img src="./images/Icons/icons8-xbox-menu-100.png"/></button>
+        </div>
+        
+        <div id="dropDown" >
+          <div><a href="#portfolio">Portfolio</a></div>
+          <div><a href="#resume">Resume</a></div>
+          <div><a href="#work">Work</a></div>
+        </div>
+      </div>
+
       <div class="portfolio">
         <a href="#portfolio">Portfolio</a>
         <a href="#resume">Resume</a>
-        <a href="#portfolio">Work</a>
+        <a href="#work">Work</a>
       </div>
     </nav>
 
-
     <main>
-
-
       <section class="first" id="portfolio">
         <div class="first-container">
-          
-
-          <figure>
+          <!-- <figure>
             <img src="./images/DanielGlow.png" alt="" />
             <figcaption>Daniel Ekeleme</figcaption>
-          </figure>
+          </figure> -->
 
+          <div class="headings">
+            <div class="creative">
+              <p>Creative</p>
+            </div>
+            <div class="product">
+              <p>Product</p>
+            </div>
+            <div class="design">
+              <p>Designer</p>
+            </div>
+          </div>
           <div class="write-up">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -269,16 +63,6 @@
               nemo provident recusandae accusantium, nesciunt fuga, neque iure
               tempora. Debitis dolorem fugit quos?
             </p>
-          </div>
-
-          <div class="creative">
-            <p>Creative</p>
-          </div>
-          <div class="product">
-            <p>Product</p>
-          </div>
-          <div class="design">
-            <p>Designer (<span>UI/UX</span>)</p>
           </div>
         </div>
       </section>
@@ -295,8 +79,17 @@
 
             <div class="socials">
               <div id="linkedin">
-                <a id="linkedinInActive" onmouseover="linkedinActive()" href="https://www.linkedin.com/in/daniel-ekeleme/" target="_blank">
-                  <img height="64px" width="64px" src="./images/Icons/icons8-linkedin-circled-100.png">
+                <a
+                  id="linkedinInActive"
+                  onmouseover="linkedinActive()"
+                  href="https://www.linkedin.com/in/daniel-ekeleme/"
+                  target="_blank"
+                >
+                  <img
+                    height="64px"
+                    width="64px"
+                    src="./images/Icons/icons8-linkedin-circled-100.png"
+                  />
                 </a>
               </div>
             </div>
@@ -486,6 +279,58 @@
           </ul>
         </div>
       </section>
+
+      <section class="third" id="work">
+        <div class="work-container">
+          <div class="work-body">
+            <img src="./images/download (7).jfif" alt="" />
+            <div class="work-details">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum, quia quo ut deserunt aliquid obcaecati recusandae nemo
+                ab quidem laborum.
+              </p>
+              <div class="see-more">
+                <a href="#">See More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-body">
+            <img src="./images/download (7).jfif" alt="" />
+            <div class="work-details">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum, quia quo ut deserunt aliquid obcaecati recusandae nemo
+                ab quidem laborum.
+              </p>
+              <div class="see-more">
+                <a href="#">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="work-body">
+            <img src="./images/download (7).jfif" alt="" />
+            <div class="work-details">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum, quia quo ut deserunt aliquid obcaecati recusandae nemo
+                ab quidem laborum.
+              </p>
+              <div class="see-more">
+                <a href="#">See More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div>
+        <p class="thanks">Thank You!</p>
+        <p>Portfolio Website Designed by Daniel Chibueze Ekeleme.</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,22 @@
+footer{
+    background-color: black;
+    padding: 3em;
+    text-align: center;
+}
+
+p.thanks{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:375px)
+{
+    footer{
+        background-color: black;
+        padding: 3em;
+        text-align: center;
+    }
+    
+    p.thanks{
+        font-size: 2rem;
+    }
+}

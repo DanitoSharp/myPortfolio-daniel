@@ -1,0 +1,256 @@
+.second {
+  color: black;
+  border: 1px solid transparent;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  background-color: white;
+
+  transform: translate(0%, -1%);
+
+  padding-top: 2em;
+}
+
+.second-container {
+  padding: 2em 3em;
+}
+
+#name {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+
+  height: 64px;
+}
+
+#career {
+  color: #00ab44;
+  margin: 0;
+  font-size: 24px;
+}
+
+#location {
+  margin: 0;
+}
+
+#number {
+  margin: 1em 0 0 0;
+}
+
+#mail {
+  margin: 0;
+  font-weight: bold;
+}
+
+p.subhead {
+  margin: 0;
+  font-size: 24px;
+  color: #00ab44;
+}
+
+div.flex-list {
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 2em 0;
+
+  width: auto;
+}
+
+div.flex-list div {
+  width: 30%;
+}
+
+p.company {
+  margin: 0;
+}
+
+.socials {
+  margin: 1em 0;
+  padding: 1em;
+}
+
+#linkedinActive {
+  transition: 1s width ease;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+
+  text-decoration: none;
+}
+
+#linkedinActive p {
+  width: 0px;
+  margin: 1.1em 1em;
+}
+
+#linkedinActive:hover {
+  width: 200px;
+}
+
+#linkedinActive:hover p {
+  width: 200px;
+}
+
+#linkedinInActive {
+  display: flex;
+  width: 64px;
+}
+
+
+@media only screen and (max-width:375px) {
+  .second {
+    color: black;
+    border: 1px solid transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    background-color: white;
+
+    transform: translate(0%, -1%);
+
+    padding-top: 1em;
+  }
+
+  .second-container {
+    padding: 2em 1em 1em 1em;
+  }
+
+  #name {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+
+    height: 140px;
+  }
+
+  #career {
+    color: #00ab44;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  #location {
+    margin: 0;
+  }
+
+  #number {
+    margin: 1em 0 0 0;
+  }
+
+  #mail {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  p.subhead {
+    margin: 0;
+    font-size: 24px;
+    color: #00ab44;
+    width: 300px;
+  }
+
+  ul {
+    width: 300px;
+    padding: 1em;
+    margin: 0;
+  }
+  ul li{
+    margin: 0 0 1em 0;
+  }
+
+
+  div.flex-list {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+
+    width: 100%;
+  }
+
+  div.flex-list div {
+    width: 30%;
+  }
+
+  p.company {
+    margin: 0;
+  }
+
+  .socials {
+    margin: 1em 0;
+    padding: 1em;
+  }
+
+  #linkedinActive {
+    transition: 1s width ease;
+    display: flex;
+    width: 64px;
+    height: 64px;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+
+    text-decoration: none;
+  }
+
+  #linkedinActive p {
+    width: 0px;
+    margin: 1.1em 1em;
+  }
+
+  #linkedinActive:hover {
+    width: 200px;
+  }
+
+  #linkedinActive:hover p {
+    width: 200px;
+  }
+
+  #linkedinInActive {
+    display: flex;
+    width: 64px;
+  }
+
+}
+
+@media only screen and (max-width: 880px)
+{
+  #name {
+    font-size: 38px;
+  }
+  div.flex-list {
+    display: flex;
+    
+    margin: 2em 0;
+    
+  }
+
+  div.flex-list div {
+    width: 100%;
+  }
+
+  ul {
+    width: auto;
+    padding: 1em;
+    margin: 0;
+  }
+  ul li{
+    margin: 0 0 1em 0;
+  }
+}
+
+@media only screen and (max-width:636px){
+  div.flex-list {
+    
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:396px){
+  #name{
+    font-size: 2rem;
+    height: 64px;
+  }
+}
