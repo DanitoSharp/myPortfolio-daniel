@@ -81,7 +81,7 @@ figcaption {
 @media only screen and (max-width: 375px) {
   section.first {
     background-color: black;
-    background-image: none;
+/*     background-image: none; */
 
     background-size: 100%;
     /* background-position: 50% 70%; */
@@ -199,7 +199,7 @@ figcaption {
 
   section.first {
     background-color: black;
-    background-image: none;
+/*     background-image: none; */
 
     padding-top: 6em;
 
