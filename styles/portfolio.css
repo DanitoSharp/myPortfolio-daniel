@@ -54,6 +54,7 @@ figcaption {
 }
 
 .creative p {
+  
   font-size: 5rem;
   font-weight: 500;
   padding-left: 0.1em;
@@ -80,6 +81,13 @@ figcaption {
   font-size: 5rem;
   margin: 0;
   font-family: "lato";
+}
+
+section.first marquee{
+  display: none;
+}
+section.first marquee p{
+  color: #00ab44;
 }
 
 
@@ -145,7 +153,7 @@ figcaption {
     font-size: 4rem;
     font-weight: 500;
     padding: 0 0.2em;
-    width: 35%;
+    width: 70%;
     height: 11vh;
     margin: 0;
     font-family: "Herr Von Muellerhoff";
@@ -172,8 +180,22 @@ figcaption {
 
 @media only screen and (max-width: 880px)
 {
+  section.first{
+    background-color: black;
+    background-image: none;
+    height: 105vh;
+  }
+  
+  section.first marquee{
+    display: block;
+  }
+  section.first marquee p{
+    font-size: 10rem;
+  }
+
   .first-container {
-    padding: 10em 1em;
+    padding: 5em 1em;
+    padding-bottom: 0;
   }
   .creative p {
     font-size: 4rem;
@@ -189,6 +211,7 @@ figcaption {
 
   .write-up {
     padding: 2em 0.5em;
+    padding-bottom: 0;
   }
   
   .write-up p {
@@ -204,7 +227,7 @@ figcaption {
   section.first {
     background-color: black;
 
-    padding-top: 6em;
+    padding-top: 3em;
 
     /* animation-name: 'background-colors';
     animation-duration: 2s;
@@ -220,8 +243,8 @@ figcaption {
   } */
 
   .write-up p {
-    font-size: 0.8em;
-    max-width: 400px;
+    font-size: 1rem;
+    max-width: 500px;
   }
 }
 
@@ -229,5 +252,28 @@ figcaption {
   section.first{
     background-color: black;
     background-image: none;
+    height: 135vh;
+  }
+  
+  section.first div.first-container{
+    padding-bottom: 0;
+  }
+  section.first div.write-up{
+    padding-bottom: 0;
+  }
+  section.first marquee{
+    display: block;
+  }
+  section.first marquee p{
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (max-width: 326px)
+{
+  section.first{
+    background-color: black;
+    background-image: none;
+    height: 140vh;
   }
 }
