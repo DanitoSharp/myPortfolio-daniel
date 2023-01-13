@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="./styles/footer.css" />
 
     <style>
-      .cert-link{
+      .cert-link {
         text-decoration: none;
-        color: #FF5E5B;
+        color: #ff5e5b;
       }
     </style>
-    
   </head>
   <body>
     <div class="preloader"></div>
@@ -29,14 +28,17 @@
             <p class="my-name">Daniel Ekeleme</p>
           </div>
           <div class="btns">
-            <button type="button" onclick="revealMenu()"><img src="./images/Icons/icons8-xbox-menu-100.png"/></button>
+            <button type="button" onclick="revealMenu()">
+              <img src="./images/Icons/icons8-xbox-menu-100.png" />
+            </button>
           </div>
         </div>
-        
-        <div id="dropDown" >
+
+        <div id="dropDown">
           <div><a href="#portfolio" onclick="hideMenu()">Portfolio</a></div>
           <div><a href="#resume" onclick="hideMenu()">Resume</a></div>
           <div><a href="#work" onclick="hideMenu()">Work</a></div>
+          <div><a href="#resume" onclick="hideMenu()">Contact Me</a></div>
         </div>
       </div>
 
@@ -58,7 +60,7 @@
 
           <div class="headings">
             <div class="creative">
-              <p>Creative</p>
+              <p>Creative <span>&#x1F601;</span></p>
             </div>
             <div class="product">
               <p>Product</p>
@@ -69,11 +71,9 @@
           </div>
           <div class="write-up">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, optio provident, commodi saepe quis deserunt omnis eum
-              eveniet aspernatur dolores vel illum! Sapiente est eum aut minima
-              nemo provident recusandae accusantium, nesciunt fuga, neque iure
-              tempora. Debitis dolorem fugit quos?
+              Hi, I'm Daniel, a product designer. I have a passion for art, i
+              care about using my designs for positive impact and enjoy creating
+              good user experiences, beautiful visuals and user cencric designs.
             </p>
           </div>
         </div>
@@ -273,14 +273,20 @@
             <li>
               <p>
                 <strong>Full-Stack Developer, Zuri x I4G</strong>
-                <i>- January 2019</i> 
+                <i>- January 2019</i>
               </p>
-              <p><a class="cert-link" href="https://drive.google.com/file/d/1YRg7iQas8-61A1F15qyJyUw4cI05c0cS/view?usp=sharing">See certificate</a></p>
+              <p>
+                <a
+                  class="cert-link"
+                  href="https://drive.google.com/file/d/1YRg7iQas8-61A1F15qyJyUw4cI05c0cS/view?usp=sharing"
+                  >See certificate</a
+                >
+              </p>
             </li>
           </ul>
         </div>
       </section>
-      
+
       <section class="third" id="work">
         <div class="work-container">
           <div class="work-body">
@@ -323,15 +329,22 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </main>
 
     <footer>
       <div>
-        <p class="thanks">Thank You!</p>
-        <p>Portfolio Website Designed by Daniel Chibueze Ekeleme.</p>
+        <p class="thanks">You made it to the bottom</p>
+        <p class="thanks">Thank You! &#x1F970;</p>
+        <!-- <p>Portfolio Website Designed by Daniel Chibueze Ekeleme.</p> -->
+        <marquee
+          behavior="scroll"
+          direction="left"
+          style="font-size: 10rem; margin: 0"
+        >
+          <p>Portfolio Website Designed by Daniel Chibueze Ekeleme.</p>
+        </marquee>
       </div>
     </footer>
 

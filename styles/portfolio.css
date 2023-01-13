@@ -62,7 +62,12 @@ figcaption {
   font-family: "Herr Von Muellerhoff";
 
   color: #00ab44;
-  text-shadow: 0px 0px 10px #00ab44, 0px 0px 10px #00ab44;
+  text-shadow: 0px 0px 20px #00ab44, 0px 0px 20px #00ab44;
+}
+
+.creative span{
+  font-size: 3rem;
+  text-shadow: 0px 0px 20px #c3c3c3, 0px 0px 20px #c3c3c3;
 }
 
 .product p {
