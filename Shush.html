@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shush By Daniel Ekeleme</title>
+
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <style>
+      section.first-pro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: auto;
+        color: black;
+
+        margin: 5em;
+      }
+
+      section.first-pro .text-box {
+        margin: auto 1em;
+      }
+
+      section.first-pro .head1 {
+        max-width: 70%;
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
+      section.first-pro .write1 {
+        max-width: 300px;
+      }
+      section.first-pro img {
+        width: 50%;
+      }
+
+    section.second-pro{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        color: black;
+
+        margin: 3em 0;
+    }
+    section.second-pro .text-box2{
+        width: 30%;
+
+        margin: auto;
+    }
+    section.second-pro .head2{
+        width: 40%;
+        margin: auto;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+      
+    section.second-pro .write2{
+          text-align: center;
+          margin: 1em auto;
+          max-width: 500px;
+        }
+        
+    section.second-pro img{
+        margin: auto;
+        width: 80%;
+    }
+      section.third-pro {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        width: auto;
+        color: black;
+
+        margin: 5em;
+      }
+
+      section.third-pro .text-box3 {
+        margin: auto 1em;
+      }
+
+      section.third-pro .head3 {
+        max-width: 500px;
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
+      section.third-pro .write3 {
+        max-width: 300px;
+      }
+      section.third-pro img {
+        width: 40%;
+      }
+
+      section.forth-pro{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        color: black;
+
+        margin: 3em 0;
+    }
+    section.forth-pro .text-box4{
+        width: 30%;
+
+        margin: auto;
+    }
+    section.forth-pro .head4{
+        max-width: 500px;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+      
+    section.forth-pro .write4{
+          text-align: center;
+          margin: 1em auto;
+          max-width: 500px;
+        }
+        
+    section.forth-pro img{
+        margin: auto;
+        width: 40%;
+    }
+
+    @media only screen and (max-width: 881px)
+    {
+      section.first-pro{
+        flex-direction: column-reverse;
+        
+      }
+
+      section.first-pro img{
+        margin-left: auto;
+      }
+      section.third-pro{
+        flex-direction: column-reverse;
+      }
+      section.third-pro .text-box3{
+        margin-left: auto;
+        width: 50%;
+      }
+    }
+    @media only screen and (max-width: 700px)
+    {
+      section.first-pro img{
+        width: 400px;
+      }
+      section.second-pro img{
+        width: 350px;
+      }
+      section.third-pro img{
+        width: 400px;
+      }
+      section.forth-pro img{
+        width: 400px;
+      }
+      
+      
+    }
+    @media only screen and (max-width: 673px)
+    {
+      p.head2{
+        max-width: 100%;
+      }
+      section.first-pro{
+        flex-direction: column-reverse;
+      }
+
+      section.first-pro img{
+        margin: auto;
+      }
+      section.third-pro{
+        flex-direction: column-reverse;
+      }
+      section.third-pro img{
+        margin: auto;
+      }
+      section.third-pro .text-box3{
+        margin: auto;
+        width: 70%;
+      }
+    }
+    @media only screen and (max-width: 553px)
+    {
+      section.first-pro{
+        margin: 1em;
+      }
+      section.third-pro{
+        margin: 1em;
+      }
+      section.third-pro img{
+        margin: auto;
+      }
+      section.third-pro .text-box3{
+        margin: auto;
+        width: 70%;
+      }
+    }
+    @media only screen and (max-width: 483px)
+    {
+      section.first-pro .head1{
+        width: auto;
+      }
+      section.second-pro .head2{
+        width: 90%;
+        margin: auto;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+      section.forth-pro .head4{
+        width: 100%;
+        text-align: center;
+        
+    }
+      section.forth-pro .text-box4{
+        
+        width: 100%;
+        
+    }
+    }
+
+    @media only screen and (max-width: 424px)
+    {
+      section.first-pro{
+        margin-top: 6em;
+        width: 100%;
+      }
+      section.first-pro img{
+        width: 80%;
+      }
+      section.second-pro img{
+        width: 80%;
+      }
+      section.third-pro img{
+        width: 80%;
+      }
+      section.forth-pro img{
+        width: 90%;
+      }
+    }
+
+    /* html{
+      width: 105%;
+    } */
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="mobile-menu">
+          <div class="holder">
+            <div class="na">
+              <p class="my-name">Daniel Ekeleme</p>
+            </div>
+            <div class="btns">
+              <button type="button" onclick="revealMenu()"><img src="./images/Icons/icons8-xbox-menu-100.png"/></button>
+            </div>
+          </div>
+          
+          <div id="dropDown" >
+            <div><a href="./index.html" onclick="hideMenu()">Back to Portfolio</a></div>
+          </div>
+        </div>
+  
+        <div class="portfolio">
+          <a href="./index.html">Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <main>
+      <section class="first-pro">
+        <div class="text-box">
+          <p class="head1">Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="write1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quos
+            consequatur recusandae facere in voluptates corrupti dolore iste
+            quae optio.
+          </p>
+        </div>
+
+        <img src="./images/Projects/shush/Shush Desktop 1.png" />
+      </section>
+
+      <section class="second-pro">
+
+        
+        <p class="head2">Lorem ipsum dolor sit amet consectetur.</p>
+        
+
+        <img src="./images/Projects/shush/Shush Desktop 2.png"/>
+
+        <p class="write2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quos
+            consequatur recusandae facere in voluptates corrupti dolore iste
+            quae optio.
+        </p>
+
+      </section>
+
+      <section class="third-pro">
+        <div class="text-box3">
+          <p class="head3">Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="write3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quos
+            consequatur recusandae facere in voluptates corrupti dolore iste
+            quae optio.
+          </p>
+        </div>
+
+        <img src="./images/Projects/shush/shush desktop 3.png" />
+      </section>
+
+      <section class="forth-pro">
+
+          
+        <img src="./images/Projects/shush/pexels-andrea-piacquadio-761977.jpg"/>
+          
+        <div class="text-box4">
+            <p class="head4">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        </section>
+      
+    </main>
+
+    <footer>
+      <div>
+        <p class="thanks">Thank You!</p>
+        <p>Portfolio Website Designed by Daniel Chibueze Ekeleme.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

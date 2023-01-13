@@ -12,20 +12,31 @@
     <link rel="stylesheet" href="./styles/work.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
 
-    <script src="./script.js" defer></script>
+    <style>
+      .cert-link{
+        text-decoration: none;
+        color: #FF5E5B;
+      }
+    </style>
+    
   </head>
   <body>
     <div class="preloader"></div>
     <nav>
       <div class="mobile-menu">
-        <div class="btns">
-          <button type="button" onclick="revealMenu()"><img src="./images/Icons/icons8-xbox-menu-100.png"/></button>
+        <div class="holder">
+          <div class="na">
+            <p class="my-name">Daniel Ekeleme</p>
+          </div>
+          <div class="btns">
+            <button type="button" onclick="revealMenu()"><img src="./images/Icons/icons8-xbox-menu-100.png"/></button>
+          </div>
         </div>
         
         <div id="dropDown" >
-          <div><a href="#portfolio">Portfolio</a></div>
-          <div><a href="#resume">Resume</a></div>
-          <div><a href="#work">Work</a></div>
+          <div><a href="#portfolio" onclick="hideMenu()">Portfolio</a></div>
+          <div><a href="#resume" onclick="hideMenu()">Resume</a></div>
+          <div><a href="#work" onclick="hideMenu()">Work</a></div>
         </div>
       </div>
 
@@ -33,6 +44,7 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#resume">Resume</a>
         <a href="#work">Work</a>
+        <a href="#resume">Contact Me</a>
       </div>
     </nav>
 
@@ -74,8 +86,10 @@
             <p id="career">Product Designer</p>
             <p id="location">Benin city, Nigeria.</p>
 
-            <p id="number">+234-902-038-3204</p>
-            <p id="mail">ekelemedaniel12@gmail.com</p>
+            <div id="resume">
+              <p id="number">+234-902-038-3204</p>
+              <p id="mail">ekelemedaniel12@gmail.com</p>
+            </div>
 
             <div class="socials">
               <div id="linkedin">
@@ -169,10 +183,6 @@
               multiple time zones and cultures.
             </li>
             <li>
-              Worked with design teams, project managers and business analysts
-              to create intuitive and easy-to-use software.
-            </li>
-            <li>
               Used wireframes, mock-ups and prototypes to establish user
               interface design and architecture.
             </li>
@@ -216,11 +226,6 @@
             </li>
             <li>Monitored workspace to keep safe and free of debris.</li>
             <li>
-              Traveled to manufacturing facilities to evaluate product creation
-              and point out potential issues.
-            </li>
-            <li>Followed quality control procedures.</li>
-            <li>
               Converted project specifications into drawings and other materials
               that would be used to create product.
             </li>
@@ -232,11 +237,6 @@
               Documented each step in product's design process for use in
               manuals.
             </li>
-            <li>
-              Offered friendly and efficient service to customers, handled
-              challenging situations with ease.
-            </li>
-            <li>Developed team communications and information for meetings.</li>
             <li>
               Drove operational improvements which resulted in savings and
               improved profit margins.
@@ -273,17 +273,18 @@
             <li>
               <p>
                 <strong>Full-Stack Developer, Zuri x I4G</strong>
-                <i>- January 2019</i>
+                <i>- January 2019</i> 
               </p>
+              <p><a class="cert-link" href="https://drive.google.com/file/d/1YRg7iQas8-61A1F15qyJyUw4cI05c0cS/view?usp=sharing">See certificate</a></p>
             </li>
           </ul>
         </div>
       </section>
-
+      
       <section class="third" id="work">
         <div class="work-container">
           <div class="work-body">
-            <img src="./images/download (7).jfif" alt="" />
+            <img src="./images/Projects/shush/thumb.png" alt="" />
             <div class="work-details">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -291,13 +292,26 @@
                 ab quidem laborum.
               </p>
               <div class="see-more">
-                <a href="#">See More</a>
+                <a href="./Shush.html">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="work-body">
+            <img src="./images/Projects/strawBank/thumb.png" alt="" />
+            <div class="work-details">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum, quia quo ut deserunt aliquid obcaecati recusandae nemo
+                ab quidem laborum.
+              </p>
+              <div class="see-more">
+                <a href="./StrawBank.html">See More</a>
               </div>
             </div>
           </div>
 
           <div class="work-body">
-            <img src="./images/download (7).jfif" alt="" />
+            <img src="./images/Projects/fumes/thumb.png" alt="" />
             <div class="work-details">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -305,23 +319,11 @@
                 ab quidem laborum.
               </p>
               <div class="see-more">
-                <a href="#">See More</a>
+                <a href="./Fumes.html">See More</a>
               </div>
             </div>
           </div>
-          <div class="work-body">
-            <img src="./images/download (7).jfif" alt="" />
-            <div class="work-details">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum, quia quo ut deserunt aliquid obcaecati recusandae nemo
-                ab quidem laborum.
-              </p>
-              <div class="see-more">
-                <a href="#">See More</a>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
     </main>
@@ -332,5 +334,7 @@
         <p>Portfolio Website Designed by Daniel Chibueze Ekeleme.</p>
       </div>
     </footer>
+
+    <script src="./script.js" defer></script>
   </body>
 </html>
