@@ -252,7 +252,7 @@ section.first marquee p{
   section.first{
     background-color: black;
     background-image: none;
-    height: 135vh;
+    height: 105vh;
   }
   
   section.first div.first-container{
@@ -274,6 +274,6 @@ section.first marquee p{
   section.first{
     background-color: black;
     background-image: none;
-    height: 140vh;
+    height: 110vh;
   }
 }
