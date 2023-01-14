@@ -17,7 +17,7 @@
 
 #myPicture{
   border-radius: 8px;
-  box-shadow: 2px 2px 10px 0px #6A8D73;
+  box-shadow: 2px 2px 10px 0px gainsboro;
   
   width: 20%;
 }
@@ -227,7 +227,7 @@ p.company {
 {
   #myPicture{
     border-radius: 8px;
-    box-shadow: 2px 2px 10px 0px #6A8D73;
+    box-shadow: 2px 2px 10px 0px gainsboro;
     
     width: 25%;
   }
@@ -259,7 +259,7 @@ p.company {
 @media only screen and (max-width:674px){
   #myPicture{
     border-radius: 8px;
-    box-shadow: 2px 2px 10px 0px #6A8D73;
+    box-shadow: 2px 2px 10px 0px gainsboro;
     
     width: 40%;
   }
@@ -272,7 +272,7 @@ p.company {
 @media only screen and (max-width:396px){
   #myPicture{
     border-radius: 8px;
-    box-shadow: 2px 2px 10px 0px #6A8D73;
+    box-shadow: 2px 2px 10px 0px gainsboro;
     
     width: 70%;
   }
