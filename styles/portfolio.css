@@ -248,7 +248,15 @@ section.first marquee p{
   }
 }
 
-@media only screen and (max-width: 1058px){
+/* @media only screen and (max-width: 1115px){
+  section.first{
+    background-color: black;
+    background-image: none;
+    
+  }
+} */
+/* 1058 */
+@media only screen and (max-width: 1115px){ 
   section.first{
     background-color: black;
     background-image: none;
