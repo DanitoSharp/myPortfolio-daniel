@@ -6,7 +6,7 @@ section.first {
   background-repeat: no-repeat;
 
   width: 100%;
-  height: 100vh;
+  height: fit-content;
 
   padding-top: 3em;
 }
@@ -84,7 +84,8 @@ figcaption {
 }
 
 section.first marquee{
-  display: none;
+  display: block;
+  visibility: hidden;
 }
 section.first marquee p{
   color: #00ab44;
@@ -100,7 +101,7 @@ section.first marquee p{
     background-repeat: no-repeat;
 
     width: 100%;
-    height: 100vh;
+    height: fit-content;
 
     padding: 2em 0;
   }
@@ -183,7 +184,7 @@ section.first marquee p{
   section.first{
     background-color: black;
     background-image: none;
-    height: 105vh;
+    height: fit-content;
   }
   
   section.first marquee{
@@ -260,7 +261,7 @@ section.first marquee p{
   section.first{
     background-color: black;
     background-image: none;
-    height: 105vh;
+    height: fit-content;
   }
   
   section.first div.first-container{
@@ -270,7 +271,7 @@ section.first marquee p{
     padding-bottom: 0;
   }
   section.first marquee{
-    display: block;
+    visibility: visible;
   }
   section.first marquee p{
     font-size: 10rem;
@@ -282,6 +283,6 @@ section.first marquee p{
   section.first{
     background-color: black;
     background-image: none;
-    height: 110vh;
+    height: fit-content;
   }
 }
