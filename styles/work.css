@@ -7,7 +7,7 @@ section.third {
     /* margin: 0; */
 }
 
-div.work-container {
+/* div.work-container {
     padding: 3em 0 2em 0;
 }
 
@@ -68,7 +68,7 @@ div.work-body a {
         border-top-right-radius: 8px;
 
         /* margin: 0; */
-
+/*
     }
 
     div.work-container {
@@ -132,7 +132,7 @@ div.work-body a {
         justify-content: space-around;
 
         /* flex-direction: column; */
-
+/*
         width: 50%;
 
         margin: 1em auto;
@@ -151,7 +151,7 @@ div.work-body a {
         justify-content: space-around;
 
         /* flex-direction: column; */
-
+/*
         width: 60%;
 
         margin: 1em auto;
@@ -229,5 +229,144 @@ div.work-body a {
         margin: auto;
         padding: 1em;
     }
+
+} */
+
+section.third {
+    background-color: #231942;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 2em;
+
+    /* margin: 0; */
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.item{
+    width: 25%;
+
+    height: fit-content;
+
+    padding: 1em;
+    background-color: whitesmoke;
+    color: black;
+
+    border-radius: 8px;
+    /* margin: 2.5em; */
+
+}
+
+.item-container{
+    display: flex;
+}
+
+.item-container p{
+    margin: auto;
+}
+
+.left{
+    width: fit-content;
+    height: fit-content;
+}
+.left img{
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+}
+
+.right{
+    margin-left: 0.9em;
+}
+
+.item-head{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.item-type{
+    font-weight: 600;
+    font-size: smaller;
+}
+p.item-body{
+    font-size: 1rem;
+    margin: 1em 0;
+}
+
+.item-link{
+    width: fit-content;
+    margin: 0.5em auto;
+}
+.item-link a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 8px;
+
+}
+
+@media only screen and (max-width:1152px)
+{
+    .row{
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+    }
+    .item{
+        width: fit-content;
+        height: fit-content;
+    
+        padding: 1em;
+        background-color: whitesmoke;
+        color: black;
+    
+        border-radius: 8px;
+        margin: 1em 0;
+    
+    }
+}
+
+@media only screen and (max-width: 820px)
+{
+    .row{
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 660px)
+{
+    .row{
+        
+        width: 100%;
+        margin: auto;
+    }
+    .item-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+    .left img{
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+    .right{
+        margin-left: 0em;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    
 
 }
